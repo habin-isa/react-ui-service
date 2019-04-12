@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.css';
 import Logo from '../../components/Logo';
-import SideBar from '../SideBar';
+import Hamburger from '../../components/Hamburger';
+// import SideBar from '../SideBar';
 
 const Header = () => (
   <div className='header'>
     <Logo />
-    <SideBar pageWrapId={"App"} outerContainerId={"App"} />
+    <Hamburger />
+    {/* <SideBar pageWrapId={"App"} outerContainerId={"App"} /> */}
   </div>
 );
 

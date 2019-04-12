@@ -5,7 +5,7 @@ import './Logo.css';
 const Logo = () => (
   <div className='logo'>
     <Link className="logoLink" to="/">
-      VEGITABLE
+      <b>VEGI</b>TABLE
     </Link>
   </div>
 );

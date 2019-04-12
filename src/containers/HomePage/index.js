@@ -1,6 +1,8 @@
 import React from 'react';
-import VideoBox from '../../components/VideoBox';
+// import VideoBox from '../../components/VideoBox';
+import BackgroundBox from '../../components/BackgroundBox';
 import AlertBox from '../../components/AlertBox';
+import SearchBox from '../../components/SearchBox';
 import SearchBar from '../SearchBar';
 
 class HomePage extends React.Component {
@@ -27,7 +29,9 @@ class HomePage extends React.Component {
     return (
       <div>
         {/* { this.state.alert ? <AlertBox  /> : <VideoBox />} */}
-        <VideoBox />
+        {/* <VideoBox /> */}
+        <SearchBox/>
+        <BackgroundBox/>
         <AlertBox 
           alertMessage={this.state.alertMessage} 
           alertVisible={this.state.alert}
