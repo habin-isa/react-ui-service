@@ -4,6 +4,7 @@ import BackgroundBox from '../../components/BackgroundBox';
 import AlertBox from '../../components/AlertBox';
 import SearchBox from '../../components/SearchBox';
 import SearchBar from '../SearchBar';
+import './Homepage.css';
 
 class HomePage extends React.Component {
   state = {
@@ -27,10 +28,12 @@ class HomePage extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="mainContainer">
         {/* { this.state.alert ? <AlertBox  /> : <VideoBox />} */}
         {/* <VideoBox /> */}
-        <SearchBox/>
+        <div className="mainSearchContainer">
+          <SearchBox/>
+        </div>
         <BackgroundBox/>
         <AlertBox 
           alertMessage={this.state.alertMessage} 

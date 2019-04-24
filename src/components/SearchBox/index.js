@@ -11,8 +11,8 @@ const SearchBox = () => (
 					Enter your location now.
 				</div>
 				{/* <form> */}
-					<input type="text" name="postcode" class="searchInput"/>
-					<input type="submit" value="SEARCH >" class="searchButton"/>
+					<input type="text" name="postcode" className="searchInput"/>
+					<input type="submit" value="SEARCH >" className="searchButton"/>
 				{/* </form> */}
 			</div>
 		</div>
