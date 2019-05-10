@@ -27,11 +27,11 @@ class HomePage extends React.Component {
     return (
       <div>
         {/* { this.state.alert ? <AlertBox  /> : <VideoBox />} */}
-        <VideoBox />
+        {/* <VideoBox />
         <AlertBox 
           alertMessage={this.state.alertMessage} 
           alertVisible={this.state.alert}
-        />
+        /> */}
         <SearchBar sendAlert={this.sendAlert} setRestaurantData={this.props.setRestaurantData}/>
       </div>
     )

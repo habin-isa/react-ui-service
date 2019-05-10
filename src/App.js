@@ -20,12 +20,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Route exact path='/' 
           render={(props) => (<HomePage {...props} setRestaurantData={this.setRestaurantData}/>)}/>
-        <Route path='/about' component={AboutPage}/>
+        {/* <Route path='/about' component={AboutPage}/>
         <Route path='/restaurants' 
-          render={(props) => (<RestaurantsPage {...props} restaurantData={this.state.restaurantData}/>)}/>
+          render={(props) => (<RestaurantsPage {...props} restaurantData={this.state.restaurantData}/>)}/> */}
       </div>
     );
   };
