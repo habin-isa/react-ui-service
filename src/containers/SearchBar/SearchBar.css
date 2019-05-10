@@ -1,10 +1,13 @@
 .searchBar {
-  height: 128px;
+  /* height: 128px;
   color: #ffffff;
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchBarTextInput {
@@ -28,22 +31,21 @@
   border: 4px solid #4668EE;
 }
 
-/* .searchBarSubmitButton {
-  color: #610F7F;
-  height: 64px;
-  width: 64px;
-  font-size: 34px;
-  margin: 1px 0 0 152px;
-  display: inline-block;
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  transition: all 0.4s ease;
-  text-decoration: none;
-  background: none;
+.searchBarSubmit {
   border: none;
-  padding-left: 10px;
-} */
+  background: none;
+}
+
+.searchBarSubmitButton {
+  width: 20px;
+  height: 36px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.searchBarSubmitButton:hover {
+  opacity: 0.7;
+}
 
 ::placeholder { 
   color: #626262;
@@ -63,9 +65,5 @@
 @media only screen and (max-width: 575px) {
   .searchBarTextInput {
     width: 192px;
-  }
-
-  .searchBarSubmitButton {
-    margin: 1px 0 0 76px;
   }
 }

@@ -52,10 +52,9 @@ class SearchBar extends React.Component {
           onChange={this.handleChange}
           placeholder='Enter your postcode'
         ></input>
-        <button className='searchBarSubmitButton' onClick={this.handleSubmit}><FontAwesomeIcon icon={faAngleDoubleRight} />
+        <button className='searchBarSubmit' onClick={this.handleSubmit}>
+          <img src={require('../../img/submitArrow.png')} alt='' className='searchBarSubmitButton'/>
         </button>
-        {/* <img src="../../img/submitButton.svg" alt=""></img> */}
-        <img src="/submitArrow" alt=""/>
       </div>
     );
   }
