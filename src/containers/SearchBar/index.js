@@ -46,15 +46,27 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className='searchBar'>
-        <input 
-          className='searchBarTextInput'
-          type="text" 
-          onChange={this.handleChange}
-          placeholder='Enter your postcode'
-        ></input>
-        <button className='searchBarSubmit' onClick={this.handleSubmit}>
-          <img src={require('../../img/submitArrow.png')} alt='' className='searchBarSubmitButton'/>
-        </button>
+        {/* <div className='searchBarContent'> */}
+        <div style={{
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundImage: `url('../../img/backgroundPinkCircle.png')`,
+          }} 
+          className='searchBarContent'>
+          <div className='searchBarTitle'>START SEARCHING</div>
+          <div className='searchBarInput'>
+            <input 
+              className='searchBarTextInput'
+              type="text" 
+              onChange={this.handleChange}
+              placeholder='Enter your postcode'
+            ></input>
+            <button className='searchBarSubmit' onClick={this.handleSubmit}>
+              <img src={require('../../img/submitArrow.png')} alt='' className='searchBarSubmitButton'/>
+            </button>
+        </div>
+        </div>
       </div>
     );
   }

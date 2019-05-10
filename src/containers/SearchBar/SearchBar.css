@@ -1,10 +1,24 @@
-.searchBar {
-  /* height: 128px;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; */
+.searchBarContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 495px;
+  width: 627px;
+  /* background-image: `url(${../../img/backgroundPinkCircle})`;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.searchBarTitle {
+  color: #4F4F4F;
+  font-family: "Bodoni 72 Smallcaps";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+}
+
+.searchBarInput {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +38,7 @@
   padding-left: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5;
+  margin: 10px;
 }
 
 .searchBarTextInput:hover,
